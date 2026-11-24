@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Correspondências da Belle Époque</title>
+  <meta name="description" content="Uma correspondência do passado, uma descoberta para o presente. Explore a Belle Époque e a obra de Renoir.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English:ital@0;1&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== PARTE 1 — ENVELOPE DIGITAL ========== -->
+<section id="entrada" class="entrada">
+  <div class="entrada-texto">
+    <p class="sobretitulo">Arquivo histórico · Paris · 1870–1914</p>
+    <h1>Correspondências<br>da Belle Époque</h1>
+    <p class="lema">Uma correspondência do passado, uma descoberta para o presente.</p>
+  </div>
+
+  <div class="envelope" id="envelope" aria-label="Envelope fechado">
+    <div class="carta-dentro">
+      <span>Seja bem-vindo à nossa exposição</span>
+    </div>
+    <div class="env-corpo"></div>
+    <div class="env-lado esq"></div>
+    <div class="env-lado dir"></div>
+    <div class="env-aba" id="aba"></div>
+    <button class="selo" id="selo" aria-label="Abrir correspondência">
+      <span class="selo-ornamento">❦</span>
+      <span class="selo-letra">B·É</span>
+    </button>
+  </div>
+
+  <button class="botao-abrir" id="btnAbrir">✉ Abrir correspondência</button>
+  <p class="dica">Clique no selo de cera para abrir</p>
+</section>
+
+<!-- ========== PARTE 2 — ARQUIVO HISTÓRICO ========== -->
+<main id="arquivo" class="arquivo oculto">
+
+  <header class="topo">
+    <button class="topo-marca" data-ir="indice">Correspondências da Belle Époque</button>
+    <nav class="topo-nav" aria-label="Navegação principal">
+      <button data-ir="contexto">Contexto</button>
+      <button data-ir="renoir">Renoir</button>
+      <button data-ir="galeria">Galeria</button>
+      <button data-ir="investigacao">Investigação</button>
+      <button data-ir="cacapalavras">Caça-palavras</button>
+      <button data-ir="quiz">Quiz</button>
+    </nav>
+  </header>
+
+  <!-- PÁGINA 2 — ÍNDICE -->
+  <section id="indice" class="pagina ativa">
+    <div class="moldura">
+      <p class="sobretitulo">Índice de documentos</p>
+      <h2>Exposição Histórica</h2>
+      <p class="intro">Seja bem-vindo à nossa exposição histórica! Nesta correspondência, você encontrará registros de uma época marcada por transformações na arte, na cultura, na sociedade e na tecnologia. Abra os documentos, conheça as histórias e participe das atividades para descobrir um pouco mais sobre a Belle Époque.</p>
+
+      <div class="cartoes">
+        <button class="cartao" data-ir="contexto"><span class="cartao-icone">📜</span><strong>Contexto histórico</strong><small>A Belle Époque</small></button>
+        <button class="cartao" data-ir="renoir"><span class="cartao-icone">✉️</span><strong>Correspondência</strong><small>Biografia de Renoir</small></button>
+        <button class="cartao" data-ir="galeria"><span class="cartao-icone">🖼️</span><strong>Galeria</strong><small>Obras do artista</small></button>
+        <button class="cartao" data-ir="investigacao"><span class="cartao-icone">🔎</span><strong>Investigação</strong><small>Análise da pintura</small></button>
+        <button class="cartao" data-ir="cacapalavras"><span class="cartao-icone">🔤</span><strong>Passatempo</strong><small>Caça-palavras</small></button>
+        <button class="cartao" data-ir="quiz"><span class="cartao-icone">🏅</span><strong>Desafio</strong><small>Quiz interativo</small></button>
+      </div>
+      <p class="rodape-pagina"><button class="link" data-ir="encerramento">Ir direto à carta de encerramento →</button></p>
+    </div>
+  </section>
+
+  <!-- PÁGINA 3 — CONTEXTO -->
+  <section id="contexto" class="pagina">
+    <div class="moldura">
+      <p class="sobretitulo">Documento histórico nº 1</p>
+      <h2>A Belle Époque</h2>
+      <p class="destaque">A Belle Époque, expressão francesa que significa “Bela Época”, foi um período de transformações culturais, artísticas, científicas e tecnológicas, geralmente situado entre o final do século XIX e o início da Primeira Guerra Mundial, em 1914.</p>
+      <p>Durante esse período, cidades como Paris passaram por mudanças importantes. Novas tecnologias, meios de transporte, formas de entretenimento e manifestações artísticas ganharam destaque.</p>
+      <p>A época também foi marcada por desigualdades sociais, por isso nem todas as pessoas vivenciaram esse período da mesma maneira.</p>
+
+      <div class="grade-sub">
+        <article class="sub"><h3>🎭 Cultura e entretenimento</h3><p>Cafés, teatros, cabarés, bailes populares e, no final do período, o cinema transformaram o lazer nas grandes cidades.</p></article>
+        <article class="sub"><h3>⚙️ Tecnologia e modernização</h3><p>Eletricidade, novos meios de transporte e grandes construções de ferro mudaram a paisagem e o ritmo da vida urbana.</p></article>
+        <article class="sub"><h3>👗 Moda e costumes</h3><p>Roupas elegantes, chapéus, passeios públicos e encontros sociais faziam parte da vida de quem podia frequentar esses espaços.</p></article>
+        <article class="sub"><h3>🏛️ Arte e arquitetura</h3><p>O Art Nouveau trouxe linhas curvas, flores e ornamentos inspirados na natureza para edifícios, cartazes e objetos.</p></article>
+      </div>
+
+      <h3 class="titulo-linha">Linha do tempo ilustrada</h3>
+      <ol class="linha-tempo">
+        <li><span class="ano">1870s</span><p>Paris se reconstrói e vive intensa renovação cultural; o Impressionismo surge.</p></li>
+        <li><span class="ano">1889</span><p>Exposição Universal de Paris e inauguração da Torre Eiffel.</p></li>
+        <li><span class="ano">1895</span><p>Primeiras exibições públicas de cinema dos irmãos Lumière.</p></li>
+        <li><span class="ano">1900</span><p>Nova Exposição Universal e inauguração do metrô de Paris.</p></li>
+        <li><span class="ano">1914</span><p>Início da Primeira Guerra Mundial encerra o período.</p></li>
+      </ol>
+
+      <p class="nota">📌 <strong>Observação histórica:</strong> a pintura <em>Bal du moulin de la Galette</em>, de Renoir, é de 1876, anterior à Belle Époque em sua delimitação mais comum. Por isso, ela é apresentada aqui como uma obra que ajuda a compreender a vida parisiense e as transformações artísticas que antecederam o período.</p>
+      <p class="rodape-pagina"><button class="link" data-ir="indice">← Voltar ao índice</button> <button class="link" data-ir="renoir">Próximo documento →</button></p>
+    </div>
+  </section>
+
+  <!-- PÁGINA 4 — RENOIR -->
+  <section id="renoir" class="pagina">
+    <div class="moldura">
+      <p class="sobretitulo">Correspondência</p>
+      <h2>Pierre-Auguste Renoir</h2>
+      <div class="duas-colunas">
+        <div>
+          <p class="destaque">Pierre-Auguste Renoir foi um pintor francês, nascido em 1841, conhecido por sua participação no movimento impressionista.</p>
+          <p>Suas pinturas retratavam frequentemente pessoas, encontros sociais, paisagens e momentos do cotidiano. Seu trabalho ficou conhecido pelo uso expressivo das cores, da luz e das pinceladas.</p>
+          <p>Renoir foi um dos artistas importantes para o desenvolvimento do Impressionismo.</p>
+        </div>
+        <aside class="ficha">
+          <div class="retrato">
+            <img src="imagens/renoir.jpg" alt="Retrato de Pierre-Auguste Renoir" onerror="this.parentNode.classList.add('sem-imagem')">
+            <span class="legenda-falta">Coloque aqui a foto<br><small>imagens/renoir.jpg</small></span>
+          </div>
+          <h3>Ficha biográfica</h3>
+          <dl>
+            <dt>Nome completo</dt><dd>Pierre-Auguste Renoir</dd>
+            <dt>Nascimento e falecimento</dt><dd>1841 (Limoges) – 1919 (Cagnes-sur-Mer)</dd>
+            <dt>Nacionalidade</dt><dd>Francesa</dd>
+            <dt>Movimento artístico</dt><dd>Impressionismo</dd>
+            <dt>Principais características</dt><dd>Cores vibrantes, luz, pinceladas soltas e cenas do cotidiano</dd>
+            <dt>Obras conhecidas</dt><dd><em>Bal du moulin de la Galette</em>, <em>The Swing</em>, <em>Dance in the City</em></dd>
+          </dl>
+        </aside>
+      </div>
+      <p class="rodape-pagina"><button class="link" data-ir="contexto">← Contexto</button> <button class="link" data-ir="galeria">Ver a galeria →</button></p>
+    </div>
+  </section>
+
+  <!-- PÁGINA 5 — GALERIA -->
+  <section id="galeria" class="pagina">
+    <div class="moldura">
+      <p class="sobretitulo">Galeria de obras</p>
+      <h2>Pinturas de Renoir</h2>
+      <p class="intro">Clique em cada pintura para abrir a ficha com informações e curiosidades.</p>
+      <div class="galeria" id="galeriaGrade"></div>
+      <p class="rodape-pagina"><button class="link" data-ir="renoir">← Renoir</button> <button class="link" data-ir="investigacao">Investigar uma pintura →</button></p>
+    </div>
+  </section>
+
+  <!-- PÁGINA 6 — INVESTIGAÇÃO -->
+  <section id="investigacao" class="pagina">
+    <div class="moldura">
+      <p class="sobretitulo">Atividade interativa</p>
+      <h2>Investigação da pintura</h2>
+      <p class="intro">Observe <em>Bal du moulin de la Galette</em> (1876). Clique nos pontos dourados para descobrir curiosidades e depois responda às perguntas do detetive.</p>
+
+      <div class="investigacao">
+        <div class="quadro-invest" id="quadroInvest">
+          <img src="imagens/pintura-principal.jpg" alt="Bal du moulin de la Galette, de Renoir, 1876" onerror="this.parentNode.classList.add('sem-imagem')">
+          <span class="legenda-falta">Coloque aqui a pintura<br><small>imagens/pintura-principal.jpg</small></span>
+          <button class="ponto" style="left:22%;top:38%" data-i="0" aria-label="Pista 1">1</button>
+          <button class="ponto" style="left:52%;top:30%" data-i="1" aria-label="Pista 2">2</button>
+          <button class="ponto" style="left:70%;top:62%" data-i="2" aria-label="Pista 3">3</button>
+          <button class="ponto" style="left:35%;top:72%" data-i="3" aria-label="Pista 4">4</button>
+        </div>
+        <div class="caixa-pista" id="caixaPista">
+          <h3>Pista</h3>
+          <p>Clique em um ponto da imagem para ler uma curiosidade.</p>
+        </div>
+      </div>
+
+      <h3 class="titulo-linha">Perguntas do detetive</h3>
+      <div class="perguntas" id="perguntasInvest"></div>
+      <p class="rodape-pagina"><button class="link" data-ir="galeria">← Galeria</button> <button class="link" data-ir="cacapalavras">Hora do passatempo →</button></p>
+    </div>
+  </section>
+
+  <!-- PÁGINA 7 — CAÇA-PALAVRAS -->
+  <section id="cacapalavras" class="pagina">
+    <div class="moldura">
+      <p class="sobretitulo">Passatempo · Jogo interativo</p>
+      <h2>Caça-palavras</h2>
+      <p class="intro">Encontre as palavras escondidas! Clique na primeira letra e depois na última letra da palavra (na horizontal, vertical ou diagonal).</p>
+      <div class="progresso"><div class="barra"><span id="barraCaca"></span></div><span id="contadorCaca">0 / 7 palavras</span></div>
+      <div class="caca-area">
+        <div class="caca-grade" id="cacaGrade" role="grid" aria-label="Grade do caça-palavras"></div>
+        <aside class="caca-lista">
+          <h3>Palavras</h3>
+          <ul id="cacaLista"></ul>
+          <button class="botao" id="cacaReiniciar">↻ Reiniciar</button>
+        </aside>
+      </div>
+      <p class="mensagem-final" id="cacaFim" hidden>🎉 Parabéns! Você encontrou todas as palavras da correspondência!</p>
+      <p class="rodape-pagina"><button class="link" data-ir="investigacao">← Investigação</button> <button class="link" data-ir="quiz">Ir ao quiz →</button></p>
+    </div>
+  </section>
+
+  <!-- PÁGINA 8 — QUIZ -->
+  <section id="quiz" class="pagina">
+    <div class="moldura">
+      <p class="sobretitulo">Desafio de conhecimentos</p>
+      <h2>Quiz da Belle Époque</h2>
+      <div id="quizCaixa" class="quiz-caixa"></div>
+      <p class="rodape-pagina"><button class="link" data-ir="cacapalavras">← Caça-palavras</button> <button class="link" data-ir="encerramento">Carta de encerramento →</button></p>
+    </div>
+  </section>
+
+  <!-- PÁGINA 9 — ENCERRAMENTO -->
+  <section id="encerramento" class="pagina">
+    <div class="moldura carta">
+      <p class="sobretitulo">Uma última correspondência...</p>
+      <h2>Carta de encerramento</h2>
+      <p class="destaque">Obrigada por abrir nossa correspondência e participar dessa viagem pela história, pela arte e pela cultura.</p>
+      <div class="video-caixa">
+        <video id="videoFinal" controls preload="metadata" poster="">
+          <source src="videos/encerramento.mp4" type="video/mp4">
+        </video>
+        <div class="video-falta" id="videoFalta">
+          <span>🎞️</span>
+          <p>Espaço reservado para o seu vídeo<br><small>videos/encerramento.mp4</small></p>
+        </div>
+      </div>
+      <blockquote class="frase-final">“Uma correspondência do passado, uma descoberta para o presente.”</blockquote>
+      <p class="rodape-pagina"><button class="link" data-ir="indice">← Voltar ao índice</button> <button class="link" id="btnReler">✉ Fechar e reabrir a correspondência</button></p>
+    </div>
+  </section>
+
+  <footer class="rodape">Correspondências da Belle Époque · Projeto escolar · Fontes: Musée d’Orsay e Norton Simon Museum</footer>
+</main>
+
+<!-- MODAL DA GALERIA -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <button class="modal-fechar" id="modalFechar" aria-label="Fechar">×</button>
+    <div class="modal-img" id="modalImg"></div>
+    <div class="modal-texto">
+      <h3 id="modalTitulo"></h3>
+      <p class="modal-meta" id="modalMeta"></p>
+      <p id="modalDesc"></p>
+      <h4>Curiosidades</h4>
+      <ul id="modalCuriosidades"></ul>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
